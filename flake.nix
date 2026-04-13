@@ -46,9 +46,9 @@
             pkgs.nil # Nix LSP
             rust # Rust toolchain
             pkgs.dioxus-cli # Dioxus CLI
+            pkgs.binaryen # wasm_opt for Dioxus CLI
 
-            pkgs.wrangler
-            pkgs.binaryen
+            pkgs.worker-build
           ];
         in
         {

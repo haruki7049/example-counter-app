@@ -16,8 +16,6 @@ enum Route {
     Home {},
 }
 
-const FAVICON: Asset = asset!("/assets/favicon.ico");
-
 fn main() {
     dioxus::launch(App);
 }
@@ -29,8 +27,6 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-        document::Link { rel: "icon", href: FAVICON }
-
         // The router component renders the route enum we defined above. It will handle synchronization of the URL and render
         // the layouts and components for the active route.
         Router::<Route> {}

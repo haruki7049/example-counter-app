@@ -1,3 +1,6 @@
+[application]
+public_dir = "public"
+
 [web]
 pre_compress = false
 
