@@ -48,7 +48,7 @@
             pkgs.dioxus-cli # Dioxus CLI
             pkgs.binaryen # wasm_opt for Dioxus CLI
 
-            pkgs.worker-build
+            pkgs.wrangler
           ];
         in
         {
