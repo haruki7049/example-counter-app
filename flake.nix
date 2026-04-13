@@ -46,6 +46,9 @@
             pkgs.nil # Nix LSP
             rust # Rust toolchain
             pkgs.dioxus-cli # Dioxus CLI
+
+            pkgs.wrangler
+            pkgs.binaryen
           ];
         in
         {
