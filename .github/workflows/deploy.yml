@@ -25,3 +25,5 @@ jobs:
     steps:
       - name: Deploy to Cloudflare Pages
         run: nix-shell --run "wrangler pages deploy ./target/dx/example-counter-app/release/web/public --project-name=example-counter-app"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
