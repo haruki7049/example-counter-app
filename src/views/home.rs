@@ -1,3 +1,4 @@
+use crate::components::counter::Counter;
 use dioxus::prelude::*;
 
 /// The Home page component that will be rendered when the current route is `[Route::Home]`
@@ -10,5 +11,8 @@ pub fn Home() -> Element {
             href: "https://github.com/haruki7049/example-counter-app",
             "github.com/haruki7049/example-counter-app",
         }
+        hr { }
+
+        Counter { }
     }
 }
